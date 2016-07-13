@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="chapter27-2.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="chapter10-2.0.war" deploy-path="/" handle="module:/resource/chapter10/chapter10">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="chapter02-2.0.jar" deploy-path="/" handle="module:/resource/chapter02/chapter02">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="derbyclient-10.6.1.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/derby/derbyclient/10.6.1.0/derbyclient-10.6.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="derby-10.6.1.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/derby/derby/10.6.1.0/derby-10.6.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.1.34.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

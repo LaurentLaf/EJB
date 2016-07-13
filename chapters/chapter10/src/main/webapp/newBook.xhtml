@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Creates a new book</title>
+</h:head>
+<h:body>
+    <h1>Create a new book</h1>
+    <hr/>
+    <h:form>
+        <h:panelGrid columns="2" >
+				<!-- ISBN  label-->
+				<!-- ISBN  inputText a binder sur le modele #{bookController.book.isbn} -->
+	 
+				<!-- Title  label, inputText a binder sur le modele bookController.book.title -->
+	
+				<!-- Price  label, inputText à binder -->
+	
+				<!-- Description  label, inputTextarea  à binder  et properties : cols, rows -->
+				
+				<!-- nbOfPage  label, inputText à binder -->
+	
+				<!-- illustrations  label, selectBooleanCheckbox à binder -->
+	        <h:outputLabel value="ISBN : "/>
+	        <h:inputText value="#{bookController.book.isbn}"/>
+	        
+	        <h:outputLabel value="Title : "/>
+	        <h:inputText value="#{bookController.book.title}"/>
+	        
+	        <h:outputLabel value="Price : "/>
+	        <h:inputText value="#{bookController.book.price}"/>
+	        
+	        <h:outputLabel value="Description : "/>
+	        <h:inputTextarea value="#{bookController.book.description}" cols="20" rows="5"/>
+	        
+	        <h:outputLabel value="Number of pages : "/>
+	        <h:inputText value="#{bookController.book.nbOfPage}"/>
+	        
+	        <h:outputLabel value="Illustrations : "/>
+	        <h:selectBooleanCheckbox value="#{bookController.book.illustrations}"/>
+                
+                
+        </h:panelGrid>
+		<!-- sur le bouton, appeler la methode bookController.doCreateBookDTO() en TP4 et doCreateBook() en TP6 -->
+        <!-- <h:commandButton value="Create a book" .... /> -->
+
+		<h:commandButton value="Create a book" action="#{bookController.doCreateBookDTO}"/>
+
+    </h:form>
+    <hr/>
+    <i>@eheb Java EE 6</i>
+
+</h:body>
+</html>
